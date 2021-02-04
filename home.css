@@ -89,13 +89,13 @@ margin: 5px;
   transform: translateX(0%);
 }
 
-@keyframes navLinksFade{
+@keyframes navLinkFade{
   from{
     opacity: 0;
     transform: translateX(50px);
   }
   to{
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px );
   }
 }
