@@ -19,7 +19,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(0,104,91,1);
+  background-color: rgba(43,85,79,1);
   font-family: 'Lora', serif;   
 }
 
@@ -80,7 +80,7 @@ transition: all 0.3 ease;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color:rgba(0,104,91,1);
+    background-color:rgba(43,85,79,1);
     display: flex;
     flex-direction: column;
     align-items: center;
