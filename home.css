@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container{
+/* .container{
   background: url(images/worthOfLogo.png) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
@@ -12,7 +12,7 @@
   background-color: green;
 
 
-}
+} */
 
 nav{
   display: flex;
@@ -123,7 +123,20 @@ transition: all 0.3 ease;
 
 footer {
   position: absolute;
-  bottom: 20px;
+  background-color: white;
+  bottom: 0;
   width: 100%;
   height: 2.5rem; 
+}
+
+#worthyofLogo{
+  object-fit: contain;
+  width: 100%;
+  height: 50vh;
+}
+
+main{
+  background-image: url("./images/donations.jpg");
+  background-size: cover;
+
 }
