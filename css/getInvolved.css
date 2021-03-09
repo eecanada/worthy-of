@@ -130,9 +130,9 @@ footer {
 }
 
 #worthyofLogo{
-  object-fit: contain;
   width: 100%;
   height: 50vh;
+
 }
 
 main{
