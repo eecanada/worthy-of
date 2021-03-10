@@ -1,0 +1,142 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* .container{
+  background: url(images/worthOfLogo.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  background-color: green;
+
+
+} */
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(43,85,79,1);
+  font-family: 'Lora', serif;   
+}
+
+.logo{
+  color:white;
+  font-size:20px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 1px;
+
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+
+}
+
+.nav-links li{
+  list-style-type: none;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+width: 25px;
+height: 4px;
+background-color:white;
+margin: 5px;
+transition: all 0.3 ease;
+}
+
+@media screen and (max-width:1030px){
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color:rgba(43,85,79,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in ;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+} 
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+footer {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+#worthyofLogo{
+  /* object-fit: contain; */
+  width: 100%;
+  height: 65vh;
+}
+
+main{
+  background-image: url("./images/donations.jpg");
+  background-size: cover;
+
+}
