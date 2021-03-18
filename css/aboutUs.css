@@ -129,14 +129,27 @@ footer {
   height: 2.5rem; 
 }
 
-#worthyofLogo{
-  /* object-fit: contain; */
-  width: 100%;
+#aboutUsImage{
+  object-fit: cover;
+  width: 100vw;
   height: 65vh;
+  position: relative;
+  text-align: center;
+  
 }
 
-main{
+#centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size:5rem;
+}
+
+
+/* main{
   background-image: url("./images/donations.jpg");
   background-size: cover;
 
-}
+} */
